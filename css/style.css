@@ -1,0 +1,1310 @@
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Inter", sans-serif;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: #EAF7FA;
+}
+
+section, 
+footer{
+    padding: 56px 0;
+}
+h3{
+    font-size: 50px;
+}
+p{
+    color: #ffffff9c;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5% ;
+}
+.btn{
+    background-color: #FF9F1C;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-color: #00B4D8 ;
+    transition: 0.1;
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+}
+header .container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav     ul a{
+    color: #00B4D8;
+    margin: 0 25px;
+    font-size: 14px;
+    display: block;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+nav     ul a:not(.btn)::after{
+    content: "";
+    background-color: #FF9F1C;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+nav  ul a:hover::after{
+    width: 100%;
+
+}
+
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .banner-text{
+    text-align: center;
+    padding: 0 30px;
+    max-width: 800px;
+}
+
+.banner .banner-text h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 40px;
+    color: #F77F00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.banner .banner-text p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #0077B6;
+    margin-bottom: 20px;
+}
+
+.banner .banner-text a {
+    margin-top: 8px;
+}
+.logo {
+  height: 150px;   /* tamanho ideal */
+  width: auto;
+}
+/* programa */
+.hero {
+  min-height: 85vh;
+  background-color: #00B4D8;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* TEXTO */
+.hero-text {
+  max-width: 520px;
+}
+
+.hero-text h1 {
+ font-family: 'Fredoka', sans-serif;
+ text-transform: uppercase;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  
+}
+
+/* IMAGEM */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px; /* imagem GRANDE */
+}
+.conteudo {
+  padding: 100px 0;
+  background-color: #EAF7FA;
+}
+
+.conteudo-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* IMAGEM */
+.conteudo-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.conteudo-image img {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* TEXTO */
+.conteudo-text {
+  flex: 1;
+  max-width: 520px;
+}
+
+.conteudo-text h2 {
+  font-family: 'Fredoka', sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 16px;
+  color: #0077b6;
+}
+
+.conteudo-text p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 24px;
+}
+.footer {
+  background-color: #00B4D8;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.footer .extensao {
+  font-size: 12px;
+  color: #eeeeee;
+  font-style: italic;
+}
+
+
+/* ===== SOBRE ===== */
+/* Faz o header ter altura menor, tipo metade da tela */
+header {
+  height: 60vh; /* pode testar 50vh ou 70vh */
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.banner {
+  position: relative;
+  height: 100%;
+}
+
+/* Faz o texto "SOBRE" ficar centralizado e maior */
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* CONTAINER PADRÃO */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER / BANNER */
+.header-sobre {
+  height: 60vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner {
+  height: 100%;
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F77F00;
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 100px !important;
+}
+
+
+/* SOBRE */
+.sobre {
+  padding: 80px 0;
+}
+
+.sobre .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.sobre-text {
+  width: 50%;
+}
+
+.sobre-text h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 60px;
+  color: #F77F00;
+}
+
+.sobre-text p {
+  margin-top: 18px;
+  color: #0077b6;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.sobre-img {
+  width: 50%;
+}
+
+.sobre-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* PROJETO EXTENSIONISTA */
+.projeto {
+  padding: 80px 0;
+  background-color: #f7fbff; /* opcional, pra diferenciar */
+}
+
+.projeto .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.projeto-text {
+  width: 50%;
+}
+
+.projeto-text h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 60px;
+  color: #F77F00;
+}
+
+.projeto-text p {
+  margin-top: 18px;
+  color: #0077b6;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.projeto-img {
+  width: 50%;
+}
+
+.projeto-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CRIADORA */
+.criadora {
+  padding: 80px 0;
+  background-color: #eef7ff;
+}
+
+.criadora .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.criadora-img {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.criadora-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #F77F00;
+}
+
+.criadora-text h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 48px;
+  color: #F77F00;
+}
+
+.criadora-text p {
+  margin-top: 16px;
+  color: #0077b6;
+  font-size: 18px;
+  line-height: 1.6;
+}
+/* end sobre */
+
+/* pagina dicas */
+.dicas h3{
+  font-family: 'Fredoka', sans-serif;
+  color: #F77F00;
+  font-size: 60px;
+  text-align: center;
+}
+.dicas .container >p{
+  text-align: center;
+  color: #0077b6;
+}
+.dicas .rows-cards{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.dicas .row-card-item{
+  background-color: #00B4D8;
+  width: calc(33.333% - 40px);
+  padding: 20px;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.dicas .row-card-item:hover{
+  background-color: #0077b6;
+}
+.dicas .row-card-item p {
+  margin-bottom: 10px;
+  color: #EAF7FA;
+} 
+
+.dicas-final {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.dicas-final p {
+  color: #0077b6;
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.btn-dicas {
+  display: inline-block;
+  background-color: #F77F00;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn-dicas:hover {
+  background-color: #00B4D8;
+  transition: 0.1;
+}
+
+.dicas-videos {
+  background-color: #EAF7FA;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.dicas-videos h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 32px;
+  color: #F77F00;
+  margin-bottom: 10px;
+}
+
+.dicas-videos .subtitulo {
+  font-size: 18px;
+  color: #0077b6;
+  margin-bottom: 40px;
+}
+
+.videos-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.video-card h4 {
+  font-family: 'Fredoka', sans-serif;
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 230px;
+  border-radius: 15px;
+}
+
+
+
+/* end dicas */
+
+
+/* APRENDA */
+.aprenda {
+  padding: 60px 0;
+  background-color: #edf6f9;
+}
+
+.aprenda h3 {
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #ff8c00;
+  margin-bottom: 10px;
+}
+
+.aprenda .subtitulo {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #0077b6;
+}
+
+.cards-aprenda {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card-aprenda {
+  background-color: #00b4d8;
+  color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card-aprenda:hover {
+  transform: translateY(-10px);
+}
+
+.card-aprenda h4 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card-aprenda p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.card-aprenda a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff8c00;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-aprenda a:hover {
+  background-color: #ff7000;
+}
+
+/* END APRENDA */
+
+/* PROGRAMACAO */
+
+.navegacao-conteudo {
+  margin-top: 50px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resumo {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.btn-principal {
+  display: inline-block;
+  background: #ff9800;
+  color: #fff;
+  padding: 14px 45px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+
+.botoes-secundarios {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-secundario {
+  background: #00bcd4;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.aprenda {
+  padding: 60px 0;
+}
+
+
+.aprenda .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* texto */
+.aprenda .texto {
+  color: #F77F00;
+  flex: 1;
+}
+
+.aprenda .texto h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.aprenda .texto p {
+  color: #0077b6;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* imagem */
+.aprenda .imagem {
+  flex: 1;
+  text-align: center;
+}
+
+.aprenda .imagem img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+/* ===== CORES DOS BLOCOS ===== */
+
+.bloco.azul {
+  background-color: #ffffff;
+}
+
+.bloco.laranja {
+  background-color: #EAF7FA;
+}
+
+.bloco.verde {
+  background-color: #ffffff;
+}
+
+.bloco.roxo {
+  background-color: #EAF7FA;
+}
+
+.bloco.amarelo {
+  background-color: #ffffff;
+}
+.dica-volta{
+  background-color: #EAF7FA;
+  text-align: center;
+}
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+  .aprenda .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aprenda .texto h2 {
+    font-size: 26px;
+  }
+}
+
+
+
+/*END PROGRAMACAO */
+
+/* lOGICA */
+
+/* ===== S LÓGICA  ===== */
+
+.logica {
+  padding: 60px 0;
+}
+
+
+.logica .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* texto */
+.logica .texto {
+  color: #F77F00;
+  flex: 1;
+}
+
+.logica .texto h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.logica .texto p {
+  color: #0077b6;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* imagem */
+.logica .imagem {
+  flex: 1;
+  text-align: center;
+}
+
+.logica .imagem img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+/* ===== CORES DOS BLOCOS ===== */
+
+.bloco.azul {
+  background-color: #ffffff;
+}
+
+.bloco.laranja {
+  background-color: #EAF7FA;
+}
+
+.bloco.verde {
+  background-color: #ffffff;
+}
+
+.bloco.roxo {
+  background-color: #EAF7FA;
+}
+
+.bloco.amarelo {
+  background-color: #ffffff;
+}
+.dica-volta{
+  background-color: #EAF7FA;
+  text-align: center;
+}
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+  .logica .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logica .texto h2 {
+    font-size: 26px;
+  }
+}
+
+
+/*END lOGICA */
+
+/*COMANDOS */
+
+.comandos {
+  padding: 60px 0;
+}
+
+
+.comandos .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* texto */
+.comandos .texto {
+  color: #F77F00;
+  flex: 1;
+}
+
+.comandos .texto h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.comandos .texto p {
+  color: #0077b6;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* imagem */
+.comandos .imagem {
+  flex: 1;
+  text-align: center;
+}
+
+.comandos .imagem img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+/* ===== CORES DOS BLOCOS ===== */
+
+.bloco.azul {
+  background-color: #ffffff;
+}
+
+.bloco.laranja {
+  background-color: #EAF7FA;
+}
+
+.bloco.verde {
+  background-color: #ffffff;
+}
+
+.bloco.roxo {
+  background-color: #EAF7FA;
+}
+
+.bloco.amarelo {
+  background-color: #ffffff;
+}
+.dica-volta{
+  background-color: #EAF7FA;
+  text-align: center;
+}
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+  .comandos .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .comandos .texto h2 {
+    font-size: 26px;
+  }
+}
+
+/*END COMANDO */
+
+/* DESAFIOS */
+
+/* ===== DESAFIOS DIVERTIDOS ===== */
+
+.topo {
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.desafio {
+  background: white;
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.opcoes button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: #90e0ef;
+  cursor: pointer;
+}
+
+.opcoes button:hover {
+  background: #48cae4;
+}
+
+#resultado {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.proximo {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  background: orange;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ===== DESAFIO ORDEM ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+}
+
+body {
+  background-color: #EAF7FA;
+}
+
+/* ÁREA DO DESAFIO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* FUNDO */
+.fundo {
+  background: #EAF7FA;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MOLDURA ROXA */
+.moldura {
+  background: #B8A1E3;
+  padding: 30px;
+  border-radius: 40px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 35px;
+  width: 380px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* TOPO */
+.topo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.robo {
+  width: 150px;
+  align-items: center;
+}
+
+.icone {
+  width: 40px;
+}
+
+/* OPÇÕES */
+.opcao {
+  width: 100%;
+  background: #E2D3F7;
+  border: none;
+  border-radius: 18px;
+  padding: 12px;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.opcao:hover {
+  background: #D0BCEF;
+}
+
+/* RESULTADO */
+#resultado {
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* BOTÕES */
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.amarelo {
+  background: #FFD166;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.verde {
+  background: #06D6A0;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* VOLTAR */
+.voltar {
+  display: block;
+  margin-top: 20px;
+  color: #7B2CBF;
+  text-decoration: none;
+}
+
+
+/*END DESAFIOS */
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .sobre .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-text,
+  .sobre-img {
+    width: 100%;
+  }
+
+  .sobre-text h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 42px;
+  }
+}
+ /* ============================= */
+/* ===== RESPONSIVO MOBILE ===== */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  /* GERAL */
+  section,
+  footer {
+    padding: 40px 0;
+  }
+
+  h3 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  /* CONTAINER */
+  .container {
+    padding: 0 20px;
+  }
+
+  /* LOGO */
+  .logo {
+    height: 100px;
+  }
+
+  /* NAV */
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul a {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  /* HEADER / BANNER */
+  header {
+    min-height: auto;
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .banner {
+    padding: 40px 0;
+  }
+
+  .banner .banner-text h1 {
+    font-size: 28px;
+  }
+
+  .banner .banner-text p {
+    font-size: 16px;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: auto;
+    padding: 40px 0;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-image img {
+    max-width: 280px;
+  }
+
+  /* CONTEÚDO */
+  .conteudo-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .conteudo-text h2 {
+    font-size: 28px;
+  }
+
+  .conteudo-image img {
+    max-width: 100%;
+  }
+
+  /* SOBRE / PROJETO */
+  .sobre .container,
+  .projeto .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-text,
+  .sobre-img,
+  .projeto-text,
+  .projeto-img {
+    width: 100%;
+  }
+
+  .sobre-text h3,
+  .projeto-text h3 {
+    font-size: 36px;
+  }
+
+  /* BANNER SOBRE */
+  .banner-text h1 {
+    font-size: 48px !important;
+  }
+
+  /* CRIADORA */
+  .criadora .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .criadora-img {
+    margin: 0 auto;
+  }
+
+  .criadora-text h3 {
+    font-size: 36px;
+  }
+
+  /* DICAS */
+  .dicas h3 {
+    font-size: 36px;
+  }
+
+  .dicas .row-card-item {
+    width: 100%;
+  }
+
+  /* VÍDEOS */
+  .videos-grid {
+    flex-direction: column;
+  }
+
+  .video-card iframe {
+    height: 200px;
+  }
+
+  /* APRENDA */
+  .aprenda h3 {
+    font-size: 32px;
+  }
+
+  .cards-aprenda {
+    grid-template-columns: 1fr;
+  }
+
+  /* PROGRAMAÇÃO / LÓGICA / COMANDOS */
+  .aprenda .flex,
+  .logica .flex,
+  .comandos .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aprenda .texto h2,
+  .logica .texto h2,
+  .comandos .texto h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  /* DESAFIOS */
+  .desafio {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .robo {
+    width: 120px;
+  }
+
+  /* BOTÕES */
+  .btn,
+  .btn-dicas,
+  .btn-principal {
+    width: 100%;
+    text-align: center;
+  }
+
+}

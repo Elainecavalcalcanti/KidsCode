@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Desafios Divertidos | KidsCode</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="imagens/engrenagem.png" type="image/x-icon">
+</head>
+<body>
+
+<header style="background-image: url('imagens/img-5.png');">
+        <!-- container -->
+        <div class="container">
+            <nav>
+               <a href="index.html">
+                <img src="imagens/logo.png" alt="logo" class="logo">
+               </a>
+               <ul class="ul">
+                 <a href="index.html">Início</a>
+                 <a href="dicas.html">Dicas</a>
+                 <a href="sobre.html">Sobre</a>
+                <a class="btn"href="aprenda.html">Aprenda Agora</a>
+
+               </ul>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>DESAFIOS DIVERTIDOS</h1>
+                        <P>Resolva o desafio e ajude o robô!</P>
+                </div>
+            </section>
+        </div>
+        <!--  end container -->
+    </header>
+
+<section class="fundo">
+
+  <div class="moldura">
+
+    <div class="card">
+
+      <div class="topo">
+        <img src="imagens/img-dente.png" class="robo">
+      </div>
+
+      <h2>Ajude o robô a escovar os dentes</h2>
+
+      <button class="opcao" onclick="verificar(2,1)">
+         Escovar → pegar escova → colocar pasta
+      </button>
+
+      <button class="opcao" onclick="verificar(2,2)">
+         Pegar escova → colocar pasta → escovar
+      </button>
+
+      <button class="opcao" onclick="verificar(2,3)">
+         Colocar pasta → enxaguar → escovar
+      </button>
+
+      <p id="resultado"></p>
+
+      <div class="botoes">
+        <button class="amarelo" onclick="reiniciar()">Tentar novamente</button>
+        <button class="verde" onclick="proximoDesafio()">Próximo desafio</button>
+      </div>
+
+      <a href="aprenda.html" class="voltar">← Voltar</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p>
+    Desenvolvido por Elaine Cavalcanti © 2025<br>
+    <span class="extensao">Projeto desenvolvido como atividade extensionista do curso de Análise e Desenvolvimento de Sistemas (ADS)</span>
+  </p>
+
+</footer>
+
+
+<script src="js/desafios.js"></script>
+</body>
+</html>
